@@ -1,0 +1,31 @@
+.task-info{
+    text-justify: distribute;
+    word-wrap: break-word;
+}.task-container {
+    padding: 20px;
+}
+
+.no-task-message {
+    color: #4b5563; /* Gray color */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.completed-task {
+    transition: transform 0.2s;
+}
+
+.completed-task:hover {
+    transform: scale(1.02);
+}
+
+.task-title {
+    font-weight: bold;
+}
+
+.task-description {
+    margin: 5px 0;
+    color: #374151; /* Darker gray */
+}
+
+/* Add additional styles as needed */

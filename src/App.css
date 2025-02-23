@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+  background-color: rgb(188, 214, 214);
+  font-family: 'Poppins', sans-serif;
+}
+/* customize scroll bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 255, 0.705);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.active, .logout{
+  color: white;
+  background-color: rgb(58, 58, 197);
+  font-weight: bolder;
+  padding: 5px 10px;
+  border-radius: 50px;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
+}
+task-container{
+  height: 90vh;
+  background-color: whitesmoke;
+}
+
+.addTask{
+  height: 10vh;
+  background-color: transparent;
+  padding: 10px;
+}
+.outlet{
+  height:80vh;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 1rem;
+  overflow: auto;
+}
+.indicator{
+  display: flex;
+  align-items: center;
+  height:10vh;
+  margin:auto 10px;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+.input-focus {
+  transition: all 0.3s ease-in-out;
+}
+
+.input-focus:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 8px rgba(79, 70, 229, 0.5);
+}
+
+.button-hover {
+  transition: transform 0.2s ease-in-out;
+}
+
+.button-hover:hover {
+  transform: scale(1.05);
+}
+
+.nav-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-icon:hover {
+  transform: rotate(20deg) scale(1.1);
+}

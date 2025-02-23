@@ -1,0 +1,25 @@
+.header {
+    height: 7vh;
+    transition: background-color 0.3s ease;
+}
+
+.header:hover {
+    background-color: #e2e8f0; /* Slightly darker on hover */
+}
+
+.logout {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout:hover {
+    background-color: #b91c1c; /* Darker red on hover */
+    transform: scale(1.05);
+}
+
+.logo a {
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #4f46e5; /* Darker blue on hover */
+}
